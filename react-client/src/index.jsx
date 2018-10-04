@@ -1,36 +1,49 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import $ from 'jquery';
-import List from './components/List.jsx';
+import React from "react";
+import ReactDOM from "react-dom";
+import $ from "jquery";
+import "./file.css";
+import NavBar from "./NavBar.jsx";
+import Intro from "./About.jsx";
+import scroll from "react-scroll";
+import Home from "./Home.jsx";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       items: []
-    }
+    };
   }
 
   componentDidMount() {
+    const newScroll = scroll.animateScroll;
+    ReactDOM.findDOMNode(this).scrollTop = -1000;
+    setTimeout(() => {
+      newScroll.scrollTo(1010);
+    }, 24300);
+
     $.ajax({
-      url: '/items', 
-      success: (data) => {
+      url: "/items",
+      success: data => {
         this.setState({
           items: data
-        })
+        });
       },
-      error: (err) => {
-        console.log('err', err);
+      error: err => {
+        console.log("err", err);
       }
     });
   }
 
-  render () {
-    return (<div>
-      <h1>Item List</h1>
-      <List items={this.state.items}/>
-    </div>)
+  render() {
+    return (
+      <div>
+        <Intro />
+        <NavBar />
+        <Home />
+      </div>
+    );
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById("app"));
