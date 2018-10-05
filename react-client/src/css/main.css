@@ -1,7 +1,17 @@
-ul {
+.ul {
   list-style-type: none;
   overflow: hidden;
-  background-color: #333;
+  background-color: red;
+  width: 100%;
+  margin-left: -30px;
+}
+
+.last {
+  margin-right: 100px;
+}
+
+.first {
+  margin-left: 80px;
 }
 
 .nav-options {
@@ -9,6 +19,7 @@ ul {
 }
 
 .nav-options a {
+  font-family: Arial, Helvetica, sans-serif;
   display: block;
   color: white;
   text-align: center;
@@ -17,6 +28,7 @@ ul {
 }
 
 .nav-home {
+  font-family: Arial, Helvetica, sans-serif;
   float: left;
 }
 
@@ -28,13 +40,8 @@ ul {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
-}
-
-.nav {
-  /* bottom: 0px; */
 }
 
 .about {
@@ -336,7 +343,137 @@ span {
 /* ----=Home=---- */
 
 .home {
-  width: 100%;
+  /* width: 100%;
   padding-top: 500px;
-  padding-bottom: 500px;
+  padding-bottom: 500px; */
+}
+
+.home-title2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: title-slide;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes title-slide {
+  from {
+    margin-left: -1600px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes title-slide {
+  from {
+    margin-left: -1600px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+.my-skills {
+  margin-top: 100px;
+  margin-left: 17%;
+}
+
+.my-skills2 {
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: skills-slide;
+  animation-duration: 1.5s;
+}
+
+.skills-list li {
+  text-align: center;
+  font-size: 25px;
+  margin-right: 12%;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon {
+  text-align: center;
+  border: solid 70px blue;
+  border-radius: 100%;
+  margin-bottom: 30px;
+  margin-left: -20px;
+}
+
+.par {
+  width: 120px;
+  font-size: 16px;
+}
+
+.fast {
+  margin-left: -20px;
+}
+
+.fast-icon {
+  margin-left: -18px;
+  width: 100px;
+  z-index: 9999;
+  margin-bottom: -125px;
+  color: white;
+}
+
+.responsive {
+  margin-left: -10px;
+}
+
+.responsive-icon {
+  margin-left: -18px;
+  width: 100px;
+  z-index: 9999;
+  margin-bottom: -125px;
+  color: white;
+}
+
+.intuitive {
+  margin-left: -10px;
+}
+
+.intuitive-icon {
+  margin-left: -5px;
+  width: 100px;
+  z-index: 9999;
+  margin-bottom: -125px;
+  color: white;
+}
+
+.dynamic {
+  margin-left: -6px;
+}
+
+.dynamic-icon {
+  margin-left: -18px;
+  width: 100px;
+  z-index: 9999;
+  margin-bottom: -125px;
+  color: white;
+}
+
+@-webkit-keyframes skills-slide {
+  from {
+    margin-left: -1600px;
+  }
+  to {
+    margin-left: 17%;
+  }
+}
+
+@keyframes skills-slide {
+  from {
+    margin-left: -1600px;
+  }
+  to {
+    margin-left: 17%;
+  }
 }

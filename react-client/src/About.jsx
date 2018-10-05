@@ -13,10 +13,10 @@ const Intro = props => (
     </p>
     <p className="info4">
       Here, you can view my portfolio, take a look at my resume, or even get in
-      touch!
+      touch.
     </p>
     <p className="info5">
-      Feel free to look around, and I hope to hear from you soon.
+      Feel free to look around, and I hope you enjoy what you see!
     </p>
     <p className="info6">-Alex </p>
   </div>

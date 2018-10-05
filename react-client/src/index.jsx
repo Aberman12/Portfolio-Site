@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import $ from "jquery";
-import "./file.css";
+import "./css/main.css";
 import NavBar from "./NavBar.jsx";
 import Intro from "./About.jsx";
 import scroll from "react-scroll";
@@ -20,7 +20,7 @@ class App extends React.Component {
     ReactDOM.findDOMNode(this).scrollTop = -1000;
     setTimeout(() => {
       newScroll.scrollTo(1010);
-    }, 24300);
+    }, 24400);
 
     $.ajax({
       url: "/items",
