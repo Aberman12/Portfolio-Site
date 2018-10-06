@@ -4,6 +4,8 @@ import time from "./png/clock.png";
 import bulb from "./png/creative.png";
 import network from "./png/network.png";
 import gear from "./png/settings.png";
+import me from "./png/0.png";
+import Example from "./Chart.jsx";
 
 class Home extends React.Component {
   constructor(props) {
@@ -34,8 +36,20 @@ class Home extends React.Component {
         }
       });
     });
+
+    $(window).scroll(function() {
+      $(".skills-descriptions").each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 1000) {
+          $(".skills-descriptions").css("visibility", "visible");
+          $(this).addClass("skills-descriptions2");
+        }
+      });
+    });
     $(".my-skills").css("visibility", "hidden");
     $(".home-title").css("visibility", "hidden");
+    $(".skills-descriptions").css("visibility", "hidden");
   }
 
   render() {
@@ -48,29 +62,51 @@ class Home extends React.Component {
           <ul className="skills-list">
             <li>
               <img src={time} className="fast-icon" />
-              <div className="icon" />
+              {/* <div className="icon" /> */}
               <p className="fast">Fast</p>
-              <p className="par">
+              <p className="fast2">
                 Fast load times and lag free interaction, my highest priority.
               </p>
             </li>
             <li>
               <img src={gear} className="responsive-icon" />
-              <div className="icon" />
+              {/* <div className="icon" /> */}
               <p className="responsive">Responsive</p>
+              <p className="responsive2">
+                My layouts will work on any device, big or small.
+              </p>
             </li>
             <li>
               <img src={bulb} className="intuitive-icon" />
-              <div className="icon intuitive" />
+              {/* <div className="icon intuitive" /> */}
               <p className="intuitive">Intuitive</p>
+              <p className="intuitive2">
+                Strong preference for easy to use, intuitive UX/UI.
+              </p>
             </li>
             <li>
-              <img src={network} className="dynamic-icon" />
-              <div className="icon" />
+              <img src={network} className="dynamic-icon icon" />
+              {/* <div className="" /> */}
               <p className="dynamic">Dynamic</p>
+              <p className="dynamic2">
+                Websites don't have to be static, I love making pages come to
+                life.
+              </p>
             </li>
           </ul>
         </div>
+        <div className="about-me">
+          <div className="my-image">
+            <img className="me" src={me} alt="this-is-me" />
+            <p className="me-title">Here's Me!</p>
+            <p className="me-description">
+              I'm the Front-End Developer living in Los Angeles, CA. I have
+              serious passion for UI effects, animations and creating intuitive,
+              dynamic user experiences. Let's make something special.
+            </p>
+          </div>
+        </div>
+        <Example />
       </div>
     );
   }

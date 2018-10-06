@@ -6,6 +6,7 @@ import NavBar from "./NavBar.jsx";
 import Intro from "./About.jsx";
 import scroll from "react-scroll";
 import Home from "./Home.jsx";
+import Resume from "./Resume.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -41,6 +42,7 @@ class App extends React.Component {
         <Intro />
         <NavBar />
         <Home />
+        <Resume />
       </div>
     );
   }

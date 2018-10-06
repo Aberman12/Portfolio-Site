@@ -379,11 +379,11 @@ span {
 
 .my-skills {
   margin-top: 100px;
-  margin-left: 17%;
+  margin-left: 10%;
 }
 
 .my-skills2 {
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: skills-slide; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: skills-slide;
   animation-duration: 1.5s;
@@ -392,24 +392,10 @@ span {
 .skills-list li {
   text-align: center;
   font-size: 25px;
-  margin-right: 12%;
-  margin-bottom: 30px;
+  margin-right: 4%;
   display: inline-block;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.icon {
-  text-align: center;
-  border: solid 70px blue;
-  border-radius: 100%;
-  margin-bottom: 30px;
-  margin-left: -20px;
-}
-
-.par {
-  width: 120px;
-  font-size: 16px;
 }
 
 .fast {
@@ -417,11 +403,18 @@ span {
 }
 
 .fast-icon {
+  padding: 16px 16px 16px 16px;
+  background-color: blue;
   margin-left: -18px;
   width: 100px;
   z-index: 9999;
-  margin-bottom: -125px;
   color: white;
+}
+
+.fast2 {
+  font-size: 15px;
+  width: 230px;
+  margin-top: -20px;
 }
 
 .responsive {
@@ -429,11 +422,18 @@ span {
 }
 
 .responsive-icon {
+  padding: 16px 16px 16px 16px;
+  background-color: blue;
   margin-left: -18px;
   width: 100px;
   z-index: 9999;
-  margin-bottom: -125px;
   color: white;
+}
+
+.responsive2 {
+  font-size: 15px;
+  width: 230px;
+  margin-top: -20px;
 }
 
 .intuitive {
@@ -441,11 +441,18 @@ span {
 }
 
 .intuitive-icon {
-  margin-left: -5px;
+  padding: 16px 16px 16px 16px;
+  background-color: blue;
+  margin-left: -18px;
   width: 100px;
   z-index: 9999;
-  margin-bottom: -125px;
   color: white;
+}
+
+.intuitive2 {
+  font-size: 15px;
+  width: 230px;
+  margin-top: -20px;
 }
 
 .dynamic {
@@ -453,11 +460,18 @@ span {
 }
 
 .dynamic-icon {
+  padding: 16px 16px 16px 16px;
+  background-color: blue;
   margin-left: -18px;
   width: 100px;
   z-index: 9999;
-  margin-bottom: -125px;
   color: white;
+}
+
+.dynamic2 {
+  font-size: 15px;
+  width: 230px;
+  margin-top: -20px;
 }
 
 @-webkit-keyframes skills-slide {
@@ -465,7 +479,7 @@ span {
     margin-left: -1600px;
   }
   to {
-    margin-left: 17%;
+    margin-left: 10%;
   }
 }
 
@@ -474,6 +488,41 @@ span {
     margin-left: -1600px;
   }
   to {
-    margin-left: 17%;
+    margin-left: 10%;
   }
+}
+
+.my-image {
+  margin-left: 20%;
+}
+
+.me {
+  margin-top: 100px;
+  width: 300px;
+  border: solid 1px black;
+}
+
+.me-title {
+  margin-top: 0px;
+  font-size: 25px;
+  margin-left: 8%;
+}
+
+.me-description {
+  margin-top: -20px;
+  font-size: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+.chart {
+  margin-left: 47%;
+  margin-top: -444px;
+}
+
+.resume {
+  margin-top: 30px;
+  padding-top: 500px;
+  padding-bottom: 500px;
+  background-color: grey;
 }
