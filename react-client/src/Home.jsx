@@ -22,6 +22,7 @@ class Home extends React.Component {
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
         if (imagePos < topOfWindow + 800) {
+          console.log("made it to home title");
           $(".home-title").css("visibility", "visible");
           $(this).addClass("home-title2");
         }
@@ -33,6 +34,7 @@ class Home extends React.Component {
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
         if (imagePos < topOfWindow + 1000) {
+          console.log("made it to ul");
           $(".my-skills").css("visibility", "visible");
           $(this).addClass("my-skills2");
         }
@@ -53,7 +55,6 @@ class Home extends React.Component {
           <ul className="skills-list">
             <li>
               <img src={time} className="fast-icon" />
-              {/* <div className="icon" /> */}
               <p className="fast">Fast</p>
               <p className="fast2">
                 Fast load times and lag free interaction, my highest priority.
@@ -61,7 +62,6 @@ class Home extends React.Component {
             </li>
             <li>
               <img src={gear} className="responsive-icon" />
-              {/* <div className="icon" /> */}
               <p className="responsive">Responsive</p>
               <p className="responsive2">
                 My layouts will work on any device, big or small.
@@ -69,7 +69,6 @@ class Home extends React.Component {
             </li>
             <li>
               <img src={bulb} className="intuitive-icon" />
-              {/* <div className="icon intuitive" /> */}
               <p className="intuitive">Intuitive</p>
               <p className="intuitive2">
                 Strong preference for easy to use, intuitive UX/UI.
@@ -77,7 +76,6 @@ class Home extends React.Component {
             </li>
             <li>
               <img src={network} className="dynamic-icon icon" />
-              {/* <div className="" /> */}
               <p className="dynamic">Dynamic</p>
               <p className="dynamic2">
                 Websites don't have to be static, I love making pages come to

@@ -530,14 +530,118 @@ span {
   margin-top: -444px;
 }
 
-.resume {
-  margin-top: 70px;
-  padding-top: 500px;
-  padding-bottom: 500px;
-  background-color: grey;
+.project-page {
+  /* margin-left: 10%; */
+  padding-left: 100px;
+  padding-right: 120px;
+  margin-top: 100px;
+  padding-bottom: 150px;
+  background-color: #f2f2f2;
+}
+
+.resume-projects-ul li {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 15%;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-projects2 {
+  -webkit-animation-name: resume-slide; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: resume-slide;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes resume-slide {
+  from {
+    margin-right: -7600px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes resume-slide {
+  from {
+    margin-right: -7600px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.resume-resume {
+  width: 300px;
+  border: solid 1px black;
+}
+
+.resume-resume:hover {
+  cursor: pointer;
+}
+
+.resume-resume2 {
+  text-align: center;
+  width: 600px;
+}
+
+.project-project {
+  width: 300px;
+  height: 388px;
+  border: solid 1px black;
+}
+
+.project-project:hover {
+  cursor: pointer;
+}
+.projects-title {
+  font-size: 25px;
 }
 
 .resume-title {
-  text-align: center;
-  margin-top: -400px;
+  font-size: 25px;
+}
+
+.modal-main {
+  position: fixed;
+  width: 0%;
+  height: 25%;
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal-close {
+  z-index: 9999;
+  color: black;
+  margin-left: -95%;
+  margin-top: 30%;
+  /* margin-top: 50px; */
+  padding: 5px;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
 }
