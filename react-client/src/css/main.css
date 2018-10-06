@@ -6,6 +6,12 @@
   margin-left: -30px;
 }
 
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -2px;
+}
+
 .last {
   margin-right: 100px;
 }
@@ -502,6 +508,10 @@ span {
   border: solid 1px black;
 }
 
+/* .me2 {
+  visibility: hidden;
+} */
+
 .me-title {
   margin-top: 0px;
   font-size: 25px;
@@ -521,8 +531,13 @@ span {
 }
 
 .resume {
-  margin-top: 30px;
+  margin-top: 70px;
   padding-top: 500px;
   padding-bottom: 500px;
   background-color: grey;
+}
+
+.resume-title {
+  text-align: center;
+  margin-top: -400px;
 }

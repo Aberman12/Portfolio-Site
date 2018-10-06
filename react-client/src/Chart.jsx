@@ -2,7 +2,7 @@ import React from "react";
 import BarChart from "react-bar-chart";
 
 const data = [
-  { text: "Javascript", value: 90, color: "#101010" },
+  { text: "Javascript", value: 90 },
   { text: "CSS", value: 80 },
   { text: "HTML", value: 80 },
   { text: "React.js", value: 75 },

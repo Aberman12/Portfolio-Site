@@ -6,15 +6,17 @@ import network from "./png/network.png";
 import gear from "./png/settings.png";
 import me from "./png/0.png";
 import Example from "./Chart.jsx";
+import ReactCardFlip from "react-card-flip";
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hello: []
+      isFlipped: false
     };
   }
   componentDidMount() {
+    const here = this;
     $(window).scroll(function() {
       $(".home-title").each(function() {
         var imagePos = $(this).offset().top;
@@ -37,19 +39,8 @@ class Home extends React.Component {
       });
     });
 
-    $(window).scroll(function() {
-      $(".skills-descriptions").each(function() {
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 1000) {
-          $(".skills-descriptions").css("visibility", "visible");
-          $(this).addClass("skills-descriptions2");
-        }
-      });
-    });
     $(".my-skills").css("visibility", "hidden");
     $(".home-title").css("visibility", "hidden");
-    $(".skills-descriptions").css("visibility", "hidden");
   }
 
   render() {
