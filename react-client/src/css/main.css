@@ -1,9 +1,10 @@
 .ul {
   list-style-type: none;
   overflow: hidden;
-  background-color: red;
+  background-color: #0b0c10;
   width: 100%;
   margin-left: -30px;
+  border-bottom: solid 2px #66fcf1;
 }
 
 .nav {
@@ -27,10 +28,11 @@
 .nav-options a {
   font-family: Arial, Helvetica, sans-serif;
   display: block;
-  color: white;
+  color: #66fcf1;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  /* #9e5a63 */
 }
 
 .nav-home {
@@ -40,14 +42,14 @@
 
 .nav-home a {
   display: block;
-  color: white;
+  color: #66fcf1;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #45a29e;
 }
 
 .about {
@@ -349,18 +351,21 @@ span {
 /* ----=Home=---- */
 
 .home {
-  /* width: 100%;
-  padding-top: 500px;
-  padding-bottom: 500px; */
+  margin-top: -15px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 70px;
+  background-color: white;
 }
 
 .home-title2 {
+  color: #0b0c10;
   font-size: 40px;
   text-align: center;
   margin-top: 80px;
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: title-slide;
+  -webkit-animation-duration: 4s;
   animation-name: title-slide;
   animation-duration: 1.5s;
 }
@@ -389,8 +394,8 @@ span {
 }
 
 .my-skills2 {
-  -webkit-animation-name: skills-slide; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: skills-slide;
+  -webkit-animation-duration: 4s;
   animation-name: skills-slide;
   animation-duration: 1.5s;
 }
@@ -406,11 +411,13 @@ span {
 
 .fast {
   margin-left: -20px;
+  color: #0b0c10;
 }
 
 .fast-icon {
   padding: 16px 16px 16px 16px;
-  background-color: blue;
+  background-color: #66fcf1;
+  border: solid 1px #0b0c10;
   margin-left: -18px;
   width: 100px;
   z-index: 9999;
@@ -420,17 +427,20 @@ span {
 .fast2 {
   font-size: 15px;
   width: 230px;
+  color: #0b0c10;
   margin-top: -20px;
 }
 
 .responsive {
   margin-left: -10px;
+  color: #0b0c10;
 }
 
 .responsive-icon {
   padding: 16px 16px 16px 16px;
-  background-color: blue;
+  background-color: #66fcf1;
   margin-left: -18px;
+  border: solid 1px #0b0c10;
   width: 100px;
   z-index: 9999;
   color: white;
@@ -440,16 +450,19 @@ span {
   font-size: 15px;
   width: 230px;
   margin-top: -20px;
+  color: #0b0c10;
 }
 
 .intuitive {
   margin-left: -10px;
+  color: #0b0c10;
 }
 
 .intuitive-icon {
   padding: 16px 16px 16px 16px;
-  background-color: blue;
+  background-color: #66fcf1;
   margin-left: -18px;
+  border: solid 1px #0b0c10;
   width: 100px;
   z-index: 9999;
   color: white;
@@ -459,18 +472,21 @@ span {
   font-size: 15px;
   width: 230px;
   margin-top: -20px;
+  color: #0b0c10;
 }
 
 .dynamic {
   margin-left: -6px;
+  color: #0b0c10;
 }
 
 .dynamic-icon {
   padding: 16px 16px 16px 16px;
-  background-color: blue;
+  background-color: #66fcf1;
   margin-left: -18px;
   width: 100px;
   z-index: 9999;
+  border: solid 1px #0b0c10;
   color: white;
 }
 
@@ -478,6 +494,7 @@ span {
   font-size: 15px;
   width: 230px;
   margin-top: -20px;
+  color: #0b0c10;
 }
 
 @-webkit-keyframes skills-slide {
@@ -500,12 +517,38 @@ span {
 
 .my-image {
   margin-left: 20%;
+  margin-bottom: 50px;
+}
+
+.my-image2 {
+  -webkit-animation-name: my-image-fade;
+  -webkit-animation-duration: 4s;
+  animation-name: my-image-fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes my-image-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes my-image-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .me {
   margin-top: 100px;
   width: 300px;
-  border: solid 1px black;
+  border: solid 1px #0b0c10;
 }
 
 /* .me2 {
@@ -525,22 +568,17 @@ span {
   text-align: center;
 }
 
-.chart {
-  margin-left: 47%;
-  margin-top: -444px;
-}
-
 .project-page {
-  /* margin-left: 10%; */
   padding-left: 100px;
   padding-right: 120px;
-  margin-top: 100px;
-  padding-bottom: 150px;
-  background-color: #f2f2f2;
+  padding-top: 35px;
+  margin-top: 200px;
+  padding-bottom: 100px;
+  background-color: #8ee4af;
 }
 
 .resume-projects-ul li {
-  margin-top: 150px;
+  margin-top: 50px;
   text-align: center;
   font-size: 25px;
   margin-left: 15%;
@@ -549,16 +587,47 @@ span {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.project-resume-title {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-resume-title2 {
+  -webkit-animation-name: project-resume-title-slide;
+  -webkit-animation-duration: 1.7s;
+  animation-name: project-resume-title-slide;
+  animation-duration: 1.7s;
+}
+
+@-webkit-keyframes project-resume-title-slide {
+  from {
+    margin-right: -5600px;
+  }
+  to {
+    text-align: center;
+  }
+}
+
+@keyframes project-resume-title-slide {
+  from {
+    margin-right: -5600px;
+  }
+  to {
+    text-align: center;
+  }
+}
+
 .resume-projects2 {
-  -webkit-animation-name: resume-slide; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: resume-slide;
+  -webkit-animation-duration: 1s;
   animation-name: resume-slide;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes resume-slide {
   from {
-    margin-right: -7600px;
+    margin-right: -5600px;
   }
   to {
     margin-left: 0%;
@@ -567,7 +636,7 @@ span {
 
 @keyframes resume-slide {
   from {
-    margin-right: -7600px;
+    margin-right: -5600px;
   }
   to {
     margin-left: 0%;
@@ -576,7 +645,7 @@ span {
 
 .resume-resume {
   width: 300px;
-  border: solid 1px black;
+  border: solid 1px #05386b;
 }
 
 .resume-resume:hover {
@@ -585,13 +654,13 @@ span {
 
 .resume-resume2 {
   text-align: center;
-  width: 600px;
+  width: 650px;
 }
 
 .project-project {
   width: 300px;
   height: 388px;
-  border: solid 1px black;
+  border: solid 1px #05386b;
 }
 
 .project-project:hover {
@@ -609,7 +678,7 @@ span {
   position: fixed;
   width: 0%;
   height: 25%;
-  top: 10%;
+  top: 7%;
   left: 30%;
   transform: translate(-50%, -50%);
   z-index: 9999;
@@ -644,4 +713,141 @@ span {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 9999;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-title2 {
+  -webkit-animation-name: contact-title-slide;
+  -webkit-animation-duration: 4s;
+  animation-name: contact-title-slide;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes contact-title-slide {
+  from {
+    margin-left: -1600px;
+  }
+  to {
+    text-align: center;
+  }
+}
+
+@keyframes contact-title-slide {
+  from {
+    margin-left: -1600px;
+  }
+  to {
+    text-align: center;
+  }
+}
+
+.contact-form {
+  margin-top: 30px;
+  text-align: center;
+  vertical-align: center;
+  margin-bottom: 250px;
+}
+
+.contact-title-p {
+  text-align: center;
+}
+
+input {
+  width: 30%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.message {
+  padding: 30px;
+  width: 27.5%;
+}
+
+.graph-cont {
+  margin-left: 35%;
+  margin-top: -475px;
+}
+
+.bar {
+  height: 30px;
+  max-width: 450px;
+  margin: 0 auto 10px auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: white;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+.bar::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  top: 0;
+  z-index: -2;
+  background: #ecf0f1;
+}
+.bar::after {
+  content: "";
+  background: #5cdb95;
+  height: 30px;
+  transition: 0.7s;
+  display: block;
+  width: 100%;
+  -webkit-animation: bar-before 1 1.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@-webkit-keyframes bar-before {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.bar1::after {
+  max-width: 90%;
+}
+
+.bar2::after {
+  max-width: 90%;
+}
+
+.bar3::after {
+  max-width: 85%;
+}
+
+.bar4::after {
+  max-width: 75%;
+}
+
+.bar5::after {
+  max-width: 60%;
+}
+
+.bar6::after {
+  max-width: 70%;
+}
+
+.bar7::after {
+  max-width: 60%;
+}
+
+.bar8::after {
+  max-width: 80%;
 }

@@ -20,13 +20,24 @@ class Resume extends React.Component {
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
         if (imagePos < topOfWindow + 500) {
-          console.log("made it");
           $(".resume-projects").css("visibility", "visible");
           $(this).addClass("resume-projects2");
         }
       });
     });
 
+    $(window).scroll(function() {
+      $(".project-resume-title").each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 800) {
+          $(".project-resume-title").css("visibility", "visible");
+          $(this).addClass("project-resume-title2");
+        }
+      });
+    });
+
+    $(".project-resume-title").css("visibility", "hidden");
     $(".resume-projects").css("visibility", "hidden");
   }
 
@@ -41,6 +52,7 @@ class Resume extends React.Component {
   render() {
     return (
       <div className="project-page">
+        <h1 className="project-resume-title">Project/Resume</h1>
         <Modal show={this.state.show} handleClose={this.hideModal} />
         <div className="resume-projects">
           <ul className="resume-projects-ul">

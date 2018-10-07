@@ -1,12 +1,11 @@
 import React from "react";
 import $ from "jquery";
-import time from "./png/clock.png";
-import bulb from "./png/creative.png";
-import network from "./png/network.png";
-import gear from "./png/settings.png";
+import time from "./png/time.png";
+import bulb from "./png/bulb.png";
+import network from "./png/network2.png";
+import gear from "./png/gear.png";
 import me from "./png/0.png";
-import Example from "./Chart.jsx";
-import ReactCardFlip from "react-card-flip";
+import Example from "./Chart2.jsx";
 
 class Home extends React.Component {
   constructor(props) {
@@ -22,7 +21,6 @@ class Home extends React.Component {
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
         if (imagePos < topOfWindow + 800) {
-          console.log("made it to home title");
           $(".home-title").css("visibility", "visible");
           $(this).addClass("home-title2");
         }
@@ -34,13 +32,24 @@ class Home extends React.Component {
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
         if (imagePos < topOfWindow + 1000) {
-          console.log("made it to ul");
           $(".my-skills").css("visibility", "visible");
           $(this).addClass("my-skills2");
         }
       });
     });
 
+    $(window).scroll(function() {
+      $(".my-image").each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 500) {
+          $(".my-image").css("visibility", "visible");
+          $(this).addClass("my-image2");
+        }
+      });
+    });
+
+    $(".my-image").css("visibility", "hidden");
     $(".my-skills").css("visibility", "hidden");
     $(".home-title").css("visibility", "hidden");
   }
