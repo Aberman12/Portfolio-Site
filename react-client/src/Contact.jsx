@@ -24,19 +24,19 @@ class Contact extends React.Component {
       });
     });
 
-    // $(window).scroll(function() {
-    //   $(".contact-form").each(function() {
-    //     var imagePos = $(this).offset().top;
-    //     var topOfWindow = $(window).scrollTop();
-    //     if (imagePos < topOfWindow + 800) {
-    //       console.log("made it");
-    //       $(".contact-form").css("visibility", "visible");
-    //       $(this).addClass("contact-form2");
-    //     }
-    //   });
-    // });
+    $(window).scroll(function() {
+      $(".contact-form").each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+          console.log("made it");
+          $(".contact-form").css("visibility", "visible");
+          $(this).addClass("contact-form2");
+        }
+      });
+    });
 
-    // $(".contact-form").css("visibility", "hidden");
+    $(".contact-form").css("visibility", "hidden");
     $(".contact-title").css("visibility", "hidden");
   }
 

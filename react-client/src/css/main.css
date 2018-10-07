@@ -555,6 +555,7 @@ span {
 .me-title {
   color: #0b0c10;
   margin-top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   margin-left: 8%;
 }
@@ -563,6 +564,7 @@ span {
   color: #0b0c10;
   margin-top: -20px;
   font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
   width: 300px;
   text-align: center;
 }
@@ -760,6 +762,7 @@ span {
 }
 
 .contact-title-p {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -789,6 +792,7 @@ input {
   font-size: 16px;
   color: #66fcf1;
   padding: 0 0 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
   position: relative;
 }
 .bar::before {
