@@ -1,5 +1,5 @@
 var nodemailer = require("nodemailer");
-const creds = require("../email.config");
+const creds = require("../.env");
 console.log("made it to router");
 var transport = {
   service: "Gmail",
