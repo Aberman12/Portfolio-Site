@@ -1,7 +1,6 @@
 var router = require("express").Router();
 var transporter = require("./transporter.js");
-console.log(transporter);
-console.log("made it to post");
+
 module.exports = {
   post: router.post("/send", (req, res, next) => {
     console.log(req.body, "from inside post");
@@ -16,7 +15,7 @@ module.exports = {
       subject: message,
       text: content
     };
-    console.log(mail);
+
     transporter.sendMail(mail, (err, data) => {
       if (err) {
         res.json({

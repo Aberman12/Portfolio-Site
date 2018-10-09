@@ -1,18 +1,19 @@
 var nodemailer = require("nodemailer");
-const creds = require("../.env");
-console.log("made it to router");
+require("dotenv").config();
+const username = process.env.EMAIL;
+const password = process.env.PASS;
+console.log("made it to router", username, password);
 var transport = {
   service: "Gmail",
   //   secure: false,
   //   port: 587,
   auth: {
-    user: creds.USER,
-    pass: creds.PASS
+    user: username,
+    pass: password
   }
 };
 
 module.exports = transporter = nodemailer.createTransport(transport);
-console.log("transporter inside transpoerter!!!!!!!!!", transporter);
 
 transporter.verify((error, success) => {
   if (error) {
