@@ -71,9 +71,9 @@ class Home extends React.Component {
             </li>
             <li>
               <img src={gear} className="responsive-icon" />
-              <p className="responsive">Responsive</p>
+              <p className="responsive">Efficient</p>
               <p className="responsive2">
-                My layouts will work on any device, big or small.
+                My back-end systems are designed to be as efficient as possible.
               </p>
             </li>
             <li>
@@ -98,9 +98,10 @@ class Home extends React.Component {
             <img className="me" src={me} alt="this-is-me" />
             <p className="me-title">Here's Me!</p>
             <p className="me-description">
-              I'm the Front-End Developer living in Los Angeles, CA. I have
-              serious passion for UI effects, animations and creating intuitive,
-              dynamic user experiences. Let's make something special.
+              I'm a full-stack developer living in Los Angeles, CA. I have
+              serious passion for creating intuitive, dynamic user experiences
+              and fast, efficient back-end systems. Let's make something
+              special.
             </p>
           </div>
         </div>

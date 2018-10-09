@@ -29,12 +29,13 @@ class Bar extends React.Component {
       <div className="graph-cont">
         <div className={this.state.className + " bar1"}>Javascript</div>
         <div className={this.state.className + " bar2"}>HTML</div>
-        <div className={this.state.className + " bar3"}>CSS</div>
-        <div className={this.state.className + " bar4"}>React.js</div>
+        <div className={this.state.className + " bar3"}>React.js</div>
+        <div className={this.state.className + " bar4"}>CSS</div>
         <div className={this.state.className + " bar5"}>Angular</div>
         <div className={this.state.className + " bar6"}>Node.js</div>
         <div className={this.state.className + " bar7"}>SQL</div>
         <div className={this.state.className + " bar8"}>Git</div>
+        <div className={this.state.className + " bar9"}>UI Design</div>
       </div>
     );
   }

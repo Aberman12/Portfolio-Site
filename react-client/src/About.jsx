@@ -9,7 +9,7 @@ const Intro = props => (
       Unfortunately, I can't be with you to introduce myself in person...
     </p>
     <p className="info3">
-      So I've inserted myself through code to properly welcome you to my site.
+      So I've inserted myself via code to properly welcome you to my site.
     </p>
     <p className="info4">
       Here, you can view my portfolio, take a look at my resume, or even get in

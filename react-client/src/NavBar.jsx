@@ -4,19 +4,16 @@ const NavBar = props => (
   <div className="nav">
     <ul className="ul">
       <li className="nav-options last">
-        <a href="about.asp">Contact</a>
+        <a onClick={() => props.contact()}>Contact</a>
       </li>
       <li className="nav-options">
-        <a href="about.asp">Portfolio</a>
+        <a onClick={() => props.resumeProjectClick()}>Resume/Portfolio</a>
       </li>
       <li className="nav-options">
-        <a href="contact.asp">Resume</a>
-      </li>
-      <li className="nav-options">
-        <a href="news.asp">About</a>
+        <a onClick={() => props.about()}>About</a>
       </li>
       <li className="nav-home first">
-        <a href="default.asp">Alex Berman</a>
+        <a>Alex Berman</a>
       </li>
     </ul>
   </div>

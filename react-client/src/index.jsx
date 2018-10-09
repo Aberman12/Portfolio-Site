@@ -16,6 +16,9 @@ class App extends React.Component {
     this.state = {
       items: []
     };
+    this.contactClick = this.contactClick.bind(this);
+    this.aboutClick = this.aboutClick.bind(this);
+    this.resumeProjectClick = this.resumeProjectClick.bind(this);
   }
 
   componentDidMount() {
@@ -24,25 +27,29 @@ class App extends React.Component {
     setTimeout(() => {
       newScroll.scrollTo(1010);
     }, 24400);
+  }
 
-    $.ajax({
-      url: "/items",
-      success: data => {
-        this.setState({
-          items: data
-        });
-      },
-      error: err => {
-        console.log("err", err);
-      }
-    });
+  contactClick() {
+    scroll.animateScroll.scrollTo(3000);
+  }
+
+  aboutClick() {
+    scroll.animateScroll.scrollTo(1009);
+  }
+
+  resumeProjectClick() {
+    scroll.animateScroll.scrollTo(2200);
   }
 
   render() {
     return (
       <div>
         <Intro />
-        <NavBar />
+        <NavBar
+          contact={this.contactClick}
+          about={this.aboutClick}
+          resumeProjectClick={this.resumeProjectClick}
+        />
         <Home />
         <Resume />
         <Contact />

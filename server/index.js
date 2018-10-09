@@ -1,21 +1,15 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var items = require("../database-mongo");
+var router = require("./router.js");
 
 var app = express();
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/../react-client/dist"));
 
-app.get("/items", function(req, res) {
-  items.selectAll(function(err, data) {
-    if (err) {
-      res.sendStatus(500);
-    } else {
-      res.json(data);
-    }
-  });
-});
+app.use("/api", router);
 
 app.listen(3003, function() {
-  console.log("listening on port 3000!");
+  console.log("listening on port 3003!");
 });
