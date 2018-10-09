@@ -123,12 +123,15 @@ class Contact extends React.Component {
         </Zoom>
         <div className="my-social">
           <ul className="social">
-            <a href="https://github.com/Aberman12">
+            <a target="_blank" href="https://github.com/Aberman12">
               <li>
                 <img src={github} className="github-icon icon2" />
               </li>
             </a>
-            <a href="https://www.linkedin.com/in/alex-berman-67b339ab/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/alex-berman-67b339ab/"
+            >
               <li>
                 <img src={linkedin} className="linkedin-icon icon2" />
               </li>
