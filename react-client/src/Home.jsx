@@ -11,7 +11,8 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isFlipped: false
+      isFlipped: false,
+      className: ""
     };
   }
   componentDidMount() {
@@ -48,6 +49,19 @@ class Home extends React.Component {
         }
       });
     });
+
+    $(window).scroll(function() {
+      $(".graph-cont").each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+          $(".graph-cont").css("visibility", "visible");
+          here.setState({ className: "bar" });
+        }
+      });
+    });
+
+    $(".graph-cont").css("visibility", "hidden");
 
     $(".my-image").css("visibility", "hidden");
     $(".my-skills").css("visibility", "hidden");
@@ -104,8 +118,18 @@ class Home extends React.Component {
               special.
             </p>
           </div>
+          <div className="graph-cont">
+            <div className={this.state.className + " bar1"}>Javascript</div>
+            <div className={this.state.className + " bar2"}>HTML</div>
+            <div className={this.state.className + " bar3"}>React.js</div>
+            <div className={this.state.className + " bar4"}>CSS</div>
+            <div className={this.state.className + " bar5"}>Angular</div>
+            <div className={this.state.className + " bar6"}>Node.js</div>
+            <div className={this.state.className + " bar7"}>SQL</div>
+            <div className={this.state.className + " bar8"}>Git</div>
+            <div className={this.state.className + " bar9"}>UI Design</div>
+          </div>
         </div>
-        <Example />
       </div>
     );
   }

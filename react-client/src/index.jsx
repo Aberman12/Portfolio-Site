@@ -30,15 +30,15 @@ class App extends React.Component {
   }
 
   contactClick() {
-    scroll.animateScroll.scrollTo(3000);
+    scroll.animateScroll.scrollTo(3040);
   }
 
   aboutClick() {
-    scroll.animateScroll.scrollTo(1009);
+    scroll.animateScroll.scrollTo(1029);
   }
 
   resumeProjectClick() {
-    scroll.animateScroll.scrollTo(2200);
+    scroll.animateScroll.scrollTo(2245);
   }
 
   render() {
