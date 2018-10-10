@@ -432,11 +432,13 @@ span {
 }
 
 .github-icon:hover {
+  transition: 0.5s;
   cursor: pointer;
   background-color: #07e1e9;
 }
 
 .linkedin-icon:hover {
+  transition: 0.5s;
   cursor: pointer;
   background-color: #07e1e9;
 }
@@ -854,6 +856,7 @@ input {
 }
 
 .btn {
+  transition: 0.5s;
   padding: 7px 15px;
   background-color: #66fcf1;
   border: solid 1px #0b0c10;
