@@ -98,7 +98,7 @@ class Home extends React.Component {
             <img className="me" src={me} alt="this-is-me" />
             <p className="me-title">Here's Me!</p>
             <p className="me-description">
-              I'm a full-stack developer living in Los Angeles, CA. I have
+              I'm a full-stack developer living in Los Angeles, CA. I have a
               serious passion for creating intuitive, dynamic user experiences
               and fast, efficient back-end systems. Let's make something
               special.

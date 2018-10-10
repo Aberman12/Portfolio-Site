@@ -116,7 +116,11 @@ class Contact extends React.Component {
                 id="message"
               />
             </div>
-            <button type="submit" className="btn">
+            <button
+              type="submit"
+              onClick={() => this.resetForm()}
+              className="btn"
+            >
               Send
             </button>
           </form>
