@@ -25,20 +25,20 @@ class App extends React.Component {
     const newScroll = scroll.animateScroll;
     ReactDOM.findDOMNode(this).scrollTop = -1000;
     setTimeout(() => {
-      newScroll.scrollTo(1010);
+      newScroll.scrollTo(1039);
     }, 24400);
   }
 
   contactClick() {
-    scroll.animateScroll.scrollTo(3040);
+    scroll.animateScroll.scrollTo(3070);
   }
 
   aboutClick() {
-    scroll.animateScroll.scrollTo(1029);
+    scroll.animateScroll.scrollTo(1039);
   }
 
   resumeProjectClick() {
-    scroll.animateScroll.scrollTo(2245);
+    scroll.animateScroll.scrollTo(2285);
   }
 
   render() {
