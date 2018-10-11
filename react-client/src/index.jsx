@@ -25,7 +25,7 @@ class App extends React.Component {
     const newScroll = scroll.animateScroll;
     ReactDOM.findDOMNode(this).scrollTop = -1000;
     setTimeout(() => {
-      newScroll.scrollTo(1039);
+      newScroll.scrollTo(1019);
     }, 24400);
   }
 
@@ -34,7 +34,7 @@ class App extends React.Component {
   }
 
   aboutClick() {
-    scroll.animateScroll.scrollTo(1039);
+    scroll.animateScroll.scrollTo(1019);
   }
 
   resumeProjectClick() {

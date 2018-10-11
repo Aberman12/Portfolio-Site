@@ -893,15 +893,27 @@ textarea {
   width: 27.5%;
 }
 
-.about-me {
-  /* display: inline-block; */
-  /* margin-left: 35%; */
-  /* margin-top: -450px; */
-}
+/* .about-me {
+  display: inline-block;
+  margin-left: 35%;
+  margin-top: -450px;
+} */
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .bar {
     visibility: hidden;
+  }
+}
+
+@media (max-width: 700px) {
+  .first {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-options {
+    margin-right: 20px;
   }
 }
 
