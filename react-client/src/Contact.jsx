@@ -77,8 +77,10 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1 className="contact-title">Contact</h1>
+      <div className="contact">
+        <h1 className="contact-title">
+          <strong>Contact</strong>
+        </h1>
         <Zoom>
           <p className="contact-title-p">
             Have a question or want to work together?

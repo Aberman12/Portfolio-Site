@@ -52,7 +52,9 @@ class Resume extends React.Component {
   render() {
     return (
       <div className="project-page">
-        <h1 className="project-resume-title">Project/Resume</h1>
+        <h1 className="project-resume-title">
+          <strong>Project/Resume</strong>
+        </h1>
         <Modal show={this.state.show} handleClose={this.hideModal} />
         <div className="resume-projects">
           <ul className="resume-projects-ul">

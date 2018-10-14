@@ -25,12 +25,12 @@ class App extends React.Component {
     const newScroll = scroll.animateScroll;
     ReactDOM.findDOMNode(this).scrollTop = -1000;
     setTimeout(() => {
-      newScroll.scrollTo(1019);
+      newScroll.scrollTo(1009);
     }, 24400);
   }
 
   contactClick() {
-    scroll.animateScroll.scrollTo(3070);
+    scroll.animateScroll.scrollTo(3170);
   }
 
   aboutClick() {
@@ -48,7 +48,7 @@ class App extends React.Component {
         <NavBar
           contact={this.contactClick}
           about={this.aboutClick}
-          resumeProjectClick={this.resumeProjectClick}
+          resume={this.resumeProjectClick}
         />
         <Home />
         <Resume />

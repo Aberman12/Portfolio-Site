@@ -1,21 +1,44 @@
 import React from "react";
 
 const NavBar = props => (
-  <div className="nav">
-    <ul className="ul">
-      <li className="nav-options last">
-        <a onClick={() => props.contact()}>Contact</a>
-      </li>
-      <li className="nav-options">
-        <a onClick={() => props.resumeProjectClick()}>Resume/Portfolio</a>
-      </li>
-      <li className="nav-options">
-        <a onClick={() => props.about()}>About</a>
-      </li>
-      <li className="nav-home first">
-        <a>Alex Berman</a>
-      </li>
-    </ul>
+  <div className="main-nav">
+    <nav className="navbar navbar-default">
+      <div className="container-fluid">
+        <div className="navbar-header">
+          <button
+            type="button"
+            className="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar" />
+            <span className="icon-bar" />
+            <span className="icon-bar" />
+          </button>
+          <a className="navbar-brand">Alex Berman</a>
+        </div>
+        <div
+          className="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+        >
+          <ul className="nav navbar-nav" />
+          <form className="navbar-form navbar-left" />
+          <ul className="nav navbar-nav navbar-right">
+            <li>
+              <a onClick={() => props.about()}>About</a>
+            </li>{" "}
+            <li>
+              <a onClick={() => props.resume()}>Resume/Portfolio</a>
+            </li>{" "}
+            <li>
+              <a onClick={() => props.contact()}>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 );
 

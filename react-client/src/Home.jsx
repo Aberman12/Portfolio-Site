@@ -43,7 +43,7 @@ class Home extends React.Component {
       $(".my-image").each(function() {
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 500) {
+        if (imagePos < topOfWindow + 400) {
           $(".my-image").css("visibility", "visible");
           $(this).addClass("my-image2");
         }
@@ -54,7 +54,7 @@ class Home extends React.Component {
       $(".graph-cont").each(function() {
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 600) {
+        if (imagePos < topOfWindow + 500) {
           $(".graph-cont").css("visibility", "visible");
           here.setState({ className: "bar" });
         }
