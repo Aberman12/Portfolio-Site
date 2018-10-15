@@ -1,14 +1,21 @@
 import React from "react";
 import resume from "./png/Alexander-Berman-Resume-1.png";
-import project from "./png/spacewatch.png";
 import $ from "jquery";
 import Modal from "./Modal.jsx";
+import project from "./png/spacewatch.png";
+import Carousel from "./Carousel.jsx";
 
 class Resume extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false
+      show: false,
+      project: [project, project],
+      count: 0,
+      url: [
+        "https://spacewatch.herokuapp.com/",
+        "file:///Users/alexhome/Desktop/BootstrapExercise/Projects/Project-7-Complete-Web/index.html#carousel-example-generic"
+      ]
     };
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
@@ -49,6 +56,22 @@ class Resume extends React.Component {
     this.setState({ show: false });
   }
 
+  moveLeft() {
+    if (this.state.count === 1) {
+      this.setState({ count: 0 });
+    }
+  }
+
+  moveRight() {
+    console.log(this.state.count);
+    if (this.state.count < 1) {
+      this.setState({ count: 1 });
+      setTimeout(() => {
+        console.log(this.state.url[this.state.count]), 300;
+      });
+    }
+  }
+
   render() {
     return (
       <div className="project-page">
@@ -69,9 +92,20 @@ class Resume extends React.Component {
             </li>
             <li className="projects">
               <h1 className="projects-title">Most Recent App</h1>
-              <a target="_blank" href="https://spacewatch.herokuapp.com/">
-                <img className="project-project" src={project} alt="project" />
+              <Carousel />
+              {/* <span className="span-arrow" onClick={() => this.moveLeft()}>
+                &#60;
+              </span>
+              <a target="_blank" href={this.state.url[this.state.count]}>
+                <img
+                  className="project-project"
+                  src={this.state.project[this.state.count]}
+                  alt="project"
+                />
               </a>
+              <span className="span-arrow2" onClick={() => this.moveRight()}>
+                &#62;
+              </span> */}
             </li>
           </ul>
         </div>
