@@ -778,7 +778,9 @@ span {
 
 .carousel {
   width: 300px;
-  height: 400px;
+  height: 388px;
+  border: solid 2px #66fcf1;
+  border-radius: 5px;
 }
 
 .projects {
@@ -818,7 +820,7 @@ span {
 
 .resume-resume {
   width: 300px;
-  border: solid 1px #66fcf1;
+  border: solid 2px #66fcf1;
   border-radius: 5px;
 }
 
