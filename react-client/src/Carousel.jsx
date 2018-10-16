@@ -1,5 +1,6 @@
 import React from "react";
 import project from "./png/spacewatch.png";
+import photoSite from "./png/photo-site.png";
 
 const Carousel = props => (
   <div
@@ -14,7 +15,7 @@ const Carousel = props => (
         className="active"
       />
       <li data-target="#carousel-example-generic" data-slide-to="1" />
-      <li data-target="#carousel-example-generic" data-slide-to="2" />
+      {/* <li data-target="#carousel-example-generic" data-slide-to="2" /> */}
     </ol>
     <div className="carousel-inner" role="listbox">
       <div className="item active">
@@ -23,8 +24,11 @@ const Carousel = props => (
         </a>
       </div>
       <div className="item">
-        <a target="_blank" href="https://spacewatch.herokuapp.com/">
-          <img classNameName="project-project" src={project} alt="project" />
+        <a
+          target="_blank"
+          href="https://alex-berman-photography.herokuapp.com/"
+        >
+          <img classNameName="project-project" src={photoSite} alt="project" />
         </a>
       </div>
     </div>

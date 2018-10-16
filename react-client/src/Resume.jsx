@@ -76,7 +76,7 @@ class Resume extends React.Component {
     return (
       <div className="project-page">
         <h1 className="project-resume-title">
-          <strong>Project/Resume</strong>
+          <strong>Resume/Portfolio</strong>
         </h1>
         <Modal show={this.state.show} handleClose={this.hideModal} />
         <div className="resume-projects">
@@ -91,7 +91,7 @@ class Resume extends React.Component {
               />
             </li>
             <li className="projects">
-              <h1 className="projects-title">Most Recent App</h1>
+              <h1 className="projects-title">Recent Projects</h1>
               <Carousel />
               {/* <span className="span-arrow" onClick={() => this.moveLeft()}>
                 &#60;
