@@ -776,6 +776,12 @@ span {
   }
 }
 
+@media (max-width: 700px) {
+  .project-resume-page {
+    position: relative;
+  }
+}
+
 .carousel {
   width: 300px;
   height: 388px;
